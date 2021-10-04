@@ -29,6 +29,10 @@ body {
           justify-content: center;
 }
 
+body .content-wrapper-665 {
+  display: none;
+}
+
 body .content-wrapper {
   margin: 173px 0 0 0;
   width: 1143px;
@@ -43,7 +47,7 @@ body .content-wrapper {
 
 body .content-wrapper .header {
   background: url("../images/3women.png");
-  width: 1143px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,10 +119,6 @@ body .content-wrapper .main-content .main-content__elements .main-content__item 
           align-items: space-between;
   text-align: center;
   width: 100%;
-}
-
-body .content-wrapper .main-content .main-content__elements .main-content__item {
-  text-align: center;
 }
 
 body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-img--red {
@@ -205,5 +205,132 @@ body .content-wrapper .main-content .main-content-link__button {
   border: none;
   margin: 0 0 234px 0;
   padding: 5px 0 0 0;
+}
+
+@media screen and (max-width: 1145px) {
+  body .content-wrapper {
+    width: 100vw;
+    margin: 88px 0 0 0;
+  }
+  body .content-wrapper .header {
+    width: 100%;
+    height: 735px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body .content-wrapper .header__title {
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: -0.6px;
+    width: 424px;
+    text-align: center;
+  }
+  body .content-wrapper .main-content-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .content-wrapper .main-content-text__title {
+    margin: 111px 0 19px 0;
+  }
+  body .content-wrapper .main-content-text__description {
+    margin: 0 0 106px 0;
+    text-align: center;
+  }
+  body .content-wrapper .main-content .main-content__elements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-img--red {
+    width: 531px;
+    height: 790px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -533px;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-img--yellow {
+    width: 525px;
+    height: 788px;
+    background-position: -69px;
+    background-size: cover;
+    margin: 0;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-img--two-women {
+    width: 526px;
+    height: 789px;
+    background-size: cover;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-slogan {
+    margin: 73px 0 43px 0;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-slogan--last {
+    margin: 68px 0 43px 0;
+  }
+  body .content-wrapper .main-content .main-content__elements .main-content__item .main-content__item-link {
+    margin: 0 0 97px 0;
+    padding: 5px 0 0 0;
+  }
+  body .content-wrapper .main-content .main-content-h5 {
+    font-weight: normal;
+    margin: 60px 0 427px 0;
+  }
+  body .content-wrapper .main-content .main-content-images {
+    width: 531px;
+    height: 388px;
+    left: 0;
+    margin: 0 0 161px 0;
+  }
+  body .content-wrapper .main-content .main-content-images__red {
+    width: 282px;
+    height: 415px;
+    background-position: -302px;
+    background-size: cover;
+    right: -134px;
+    top: -313px;
+  }
+  body .content-wrapper .main-content .main-content-link__button {
+    margin: 0 0 241px 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  body .content-wrapper .header {
+    background-position: -234px;
+  }
+}
+
+@media screen and (max-width: 664px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .content-wrapper {
+    display: none;
+  }
+  body .content-wrapper-665 {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

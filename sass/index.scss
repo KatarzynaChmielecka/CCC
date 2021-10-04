@@ -16,6 +16,10 @@ body {
     display: flex;
     justify-content: center;
 
+    .content-wrapper-665 {
+        display: none;
+    }
+
     .content-wrapper {
         margin: 173px 0 0 0;
         width: 1143px;
@@ -24,7 +28,7 @@ body {
 
         .header {
             background: url('../images/3women.png');
-            width: 1143px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,7 +44,6 @@ body {
         }
 
         .main-content-text {
-
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -73,10 +76,6 @@ body {
                     align-items: space-between;
                     text-align: center;
                     width: 100%;
-                }
-
-                .main-content__item {
-                    text-align: center;
 
                     .main-content__item-img--red {
                         width: 368px;
@@ -119,8 +118,6 @@ body {
                         margin: 0 0 142px 0;
                         padding: 5px 0 0 0;
                     }
-
-
                 }
             }
 
@@ -167,6 +164,148 @@ body {
                 margin: 0 0 234px 0;
                 padding: 5px 0 0 0;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1145px) {
+
+    body {
+        .content-wrapper {
+            width: 100vw;
+            margin: 88px 0 0 0;
+
+            .header {
+                width: 100%;
+                height: 735px;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                &__title {
+                    font-size: 60px;
+                    line-height: 73px;
+                    letter-spacing: -0.6px;
+                    width: 424px;
+                    text-align: center;
+                }
+            }
+
+            .main-content-text {
+                align-items: center;
+
+                &__title {
+                    margin: 111px 0 19px 0;
+                }
+
+                &__description {
+                    margin: 0 0 106px 0;
+                    text-align: center;
+                }
+            }
+
+            .main-content {
+
+                .main-content__elements {
+                    flex-direction: column;
+
+                    .main-content__item {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+
+                        .main-content__item-img--red {
+                            width: 531px;
+                            height: 790px;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: -533px;
+                        }
+
+                        .main-content__item-img--yellow {
+                            width: 525px;
+                            height: 788px;
+                            background-position: -69px;
+                            background-size: cover;
+                            margin: 0;
+                        }
+
+                        .main-content__item-img--two-women {
+                            width: 526px;
+                            height: 789px;
+                            background-size: cover;
+                        }
+
+                        .main-content__item-slogan {
+                            margin: 73px 0 43px 0;
+
+                            &--last {
+                                margin: 68px 0 43px 0;
+                            }
+                        }
+
+                        .main-content__item-link {
+                            margin: 0 0 97px 0;
+                            padding: 5px 0 0 0;
+                        }
+                    }
+                }
+
+                .main-content-h5 {
+                    font-weight: normal;
+                    margin: 60px 0 427px 0;
+                }
+
+                .main-content-images {
+                    width: 531px;
+                    height: 388px;
+                    left: 0;
+                    margin: 0 0 161px 0;
+
+                    &__red {
+                        width: 282px;
+                        height: 415px;
+                        background-position: -302px;
+                        background-size: cover;
+                        right: -134px;
+                        top: -313px;
+                    }
+                }
+
+                .main-content-link__button {
+                    margin: 0 0 241px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    body {
+        .content-wrapper {
+            .header {
+                background-position: -234px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 664px) {
+
+    body {
+        .content-wrapper {
+            display: none;
+        }
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content-wrapper-665 {
+            display: block;
+            width: 80%;
+            text-align: center;
         }
     }
 }
